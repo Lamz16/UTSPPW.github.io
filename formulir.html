@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styleform.css">
+<link rel="shortcut icon" href="images/logo.png" type="image/x-icon"
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+    <!--Navigasi-->
+    <nav>
+    <div class="topnav">
+        <a href="index.html" style="float:left">Home</a>
+        <a href="#" style="float:left">Register</a>
+        <a href="#contact-us" style="float:left">Contact Us</a>
+        <a href="#" style="float:right">Login</a>
+    </div>
+    </nav>
+    <!--HEADER-->
+    <div class="middlecolumn">
+    <div class="card1">
+        <h1>Gelar Karya Mahasiswa</h1>
+        <p>Gelar Karya Mahasiswa prodi Sistem Informasi adalah suatu ajang kompetisi mahasiswa dari luaran mata kuliah di prodi Sistem Informasi. Karya mahasiswa diharapkan dapat terus mendorong inovasi dengan atmosfer kompetisi yang dibangun melalui Gelar Karya Mahasiswa Sistem Informasi (GKM SI)</p>
+    </div>
+    </div>
+    <!--judulformulir-->
+    <div class="form">
+    <div class="card2">
+        <h3>FORMULIR PENDAFTARAN GELAR KARYA MAHASISWA (GKM) AMIKOM PRODI SISTEM INFORMASI 2022</h3>
+        <p>Gelar Karya Mahasiswa prodi Sistem Informasi adalah suatu ajang kompetisi mahasiswa dari hasil luaran mata kuliah di prodi Sistem Informasi. Karya proyek-proyek mata kuliah di program studi Sistem Informasi dapat didaftarkan sebagai karya inovasi yang dapat didaftarkan pada GKM SI. </p>
+        <div class="formin">
+        <form action=”#” method=”post”>
+            <div class="input-form">
+                <label for="email">Email Ketua Tim</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="input-form">
+                <label for="nama-produk">Nama Produk</label>
+                <textarea id="produk"></textarea>
+            </div>
+            <div class="input-form">
+                <label for="nama-ketua-tim">Nama Ketua Tim</label>
+                <input type="text" id="ketuatim" required>
+            </div>
+            <div class="input-form">
+                <label for="nama-anggota">Nama anggota</label>
+                <textarea id="anggota"></textarea>
+            </div>
+            <div class="input-form">
+                <label for="no-wa-ketua-tim">Nomor WA Ketua Tim</label>
+                <input type="text" id="no-wa" required>
+            </div>
+            <div class="input-form">
+                <label for="dosen">Nama Dosen Pembimbing</label>
+                <input type="text" id="dosen">
+            </div>
+            <div class="input-form">
+                <label for="kelas">Kelas</label>
+                <select name="kelas" required>
+                    <option value="" disabled selected>--Pilih Kelas--</option>
+                    <option value="21si01">21 BCIS 01</option>
+                    <option value="21si01">21 S1SI 01</option>
+                    <option value="21si01">21 S1SI 02</option>
+                    <option value="21si01">21 S1SI 03</option>
+                    <option value="21si01">21 S1SI 04</option>
+                    <option value="21si01">21 S1SI 05</option>
+                    <option value="21si01">21 S1SI 06</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="kategori">Kategori Lomba</label>
+                <div class="d-inline-block">
+                    <input type="radio" class="w-auto" name="kategori-lomba" id="k-media" required /> 
+                    <label>Media Interaktif Digital & AR/VR </label><br>
+
+                    <input type="radio" class="w-auto" name="kategori-lomba" id="k-multimedia" />
+                    <label>Multimedia dan Short Movie</label> <br>
+
+                    <input type="radio" class="w-auto" name="kategori-lomba" id="k-rpl" />
+                    <label>RPL & Sistem Informasi</label> <br>
+
+                    <input type="radio" class="w-auto" name="kategori-lomba" id="k-fotografi" />
+                    <label>Fotografi</label> <br>
+
+                    <input type="radio" class="w-auto" name="kategori-lomba" id="k-inovasi" />
+                    <label>Inovasi Digital Fintech</label> <br>
+
+                    <input type="radio" class="w-auto" name="kategori-lomba" id="k-uiux" />
+                    <label>UI/UX Design</label> <br>
+
+                    <input type="radio" class="w-auto" name="kategori-lomba" id="k-ai" />
+                    <label>Artificial Intelligence & IoT</label> <br>
+
+                    <input type="radio" class="w-auto" name="kategori-lomba" id="k-artikel" />
+                    <label>Artikel Karya Ilmiah ICT</label> <br>
+
+                    <input type="radio" class="w-auto" name="kategori-lomba" id="k-wirausaha" />
+                    <label>Kewirausahaan dan Startup</label> <br>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="dokumen-pendaftaran">
+                    Upload Dokumen Pendaftaran <span class="required-label">*</span>
+                    <input type="file" accept=".doc, .docx, .pdf" class="w-auto d-inline-block" name="dokumen-pendaftaran" id="dokumen-pendaftaran" required />
+                </label>
+            </div>
+            <div class="input-group">
+                <label for="doc-pendaftaran">Checklist Dokumen</label>
+                <div class="d-inline-block">
+                    <input type="checkbox" class="w-auto" name="check-dokument[]" id="doc-pendaftaran"> <label  class="d-inline-block w-auto" for="doc-pendaftaran"> Dokumen Pendaftaran</label>
+                    <br>
+                    <input type="checkbox" class="w-auto" name="check-dokument[]" id="no-wa-ketua"> <label  class="d-inline-block w-auto" for="no-wa-ketua"> No. WA Ketua</label>
+                    <br>
+                    <input type="checkbox" class="w-auto" name="check-dokument[]" id="nama-pembimbing"> <label class="d-inline-block w-auto" for="nama-pembimbing"> Nama Pembimbing</label>
+                    <br>
+                    <input type="checkbox" class="w-auto" name="check-dokument[]" id="pilih-kategori"> <label class="d-inline-block w-auto" for="pilih-kategori"> Memilih Kategori</label>
+                    <br>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="tgl-daftar">Dengan ini saya mendaftar GKM pada tanggal</label>
+                <input type="datetime-local" id="tgl-daftar" name="tgl-daftar" required />
+                <br>
+                <span class="required-label">*</span> <small>Teliti lagi data sebelum mengirim</small>
+            </div>
+            <div class="row">
+                <button type="submit" class="btn btn-submit col-6 col-sm-12">Kirim</button>
+                <button type="reset" class="btn btn-reset col-6 col-sm-12">Reset</button>
+            </div>
+        </form>
+    </div>
+</section>
+</main>
+</div>        
+        </form>
+    </div>
+    <!--Footer-->
+    <footer>
+        <div class="footer">
+        <div class="fcreat">
+            <h3>CREATED BY</h3>
+            <table>
+                <tr>
+                    <th>NAMA</th>
+                    <td>=</td>
+                    <td>ANDI SALAM SYAHPUTRA</td>
+                </tr>
+                <tr>
+                    <th>NIM</th>
+                    <td>=</td>
+                    <td>21.12.1847</td>
+                </tr>
+                <tr>
+                    <th>PROGAM STUDI</th>
+                    <td>=</td>
+                    <td>S1 SISTEM INFORMASI</td>
+                </tr>
+            </table>
+            <div class="communic">
+                <h3 id="contact-us">CONTACT US</h3>
+                <table>
+                <tr>
+                    <th>SOCIAL MEDIA 1</th>
+                    <td>:</td>
+                    <td><a href="https://www.facebook.com/profile.php?id=100011613752601" target="_blank">Facebook</a></td>
+                </tr>
+                <tr><th>SOCIAL MEDIA 2</th>
+                    <td>:</td>
+                    <td><a href="https://www.instagram.com/avada.kedaavra/" target="_blank">Instagram</a></td>
+                </tr>
+            </table>
+            </div>
+            <div class="message">
+                <p>TERIMA KASIH TELAH BERKUNJUNG DAN MELIHAT LAMAN KAMI</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
